@@ -1,16 +1,26 @@
 package main.com.toyRobot.robot;
 
-import main.com.toyRobot.position.Face;
+import main.com.toyRobot.status.Status;
+import main.com.toyRobot.status.Face;
+import main.com.toyRobot.table.Table;
+import main.com.toyRobot.command.*;
 
 public class Robot {
-    private int positionX = 0;
-    private int positionY = 0;
-    private Face face = Face.NORTH;
+    private Status status;
+    private Face face;
     
-    public void place(int x, int y, Face face) {
-        this.positionX = x;
-        this.positionY = y;
-        this.face = face;
+    public Robot() {
+        this.status = new Status(0, 0, Face.NORTH);
+        this.face = Face.NORTH;
+    }
+
+    public void execute(Command command) {
+        Status nextStatus = command.execute(this.status);
+        if(Table.isValidPosition(nextStatus.position())) {
+            this.status = nextStatus;
+        } else {
+            System.out.println("Dangerous move has been prevented.");
+        }
     }
 
     public Face face() {
@@ -26,7 +36,7 @@ public class Robot {
     }
 
     public void report() {
-		System.out.println(this.positionX + "," + this.positionY + "," + this.face);
+		System.out.println(this.status);
     }
     
 }

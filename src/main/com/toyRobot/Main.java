@@ -1,18 +1,21 @@
 package main.com.toyRobot;
 
 import main.com.toyRobot.robot.Robot;
+import main.com.toyRobot.command.*;
 
 public class Main {
 		public static void main(String[] args) {
 			Robot robot = new Robot();
+			Command move = new Move();
+			Command left = new Left();
+			robot.execute(move);
 			robot.report();
-			System.out.println(robot.face());
+			robot.execute(left);
+			robot.execute(move);
 			robot.report();
-			// robot.left();
-			// robot.report();
-			// robot.left();
-			// robot.report();
-			// robot.left();
+
+			// robot.move();
+			// robot.move();
 			// robot.report();
 	}
 }

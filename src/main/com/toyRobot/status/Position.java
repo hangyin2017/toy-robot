@@ -1,4 +1,4 @@
-package main.com.toyRobot.position;
+package main.com.toyRobot.status;
 
 public class Position {
     private int x;
@@ -15,5 +15,10 @@ public class Position {
 
     public int y() {
         return this.y;
+    }
+
+    @Override
+    public String toString() {
+        return this.x() + "," + this.y();
     }
 }

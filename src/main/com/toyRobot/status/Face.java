@@ -1,4 +1,4 @@
-package main.com.toyRobot.position;
+package main.com.toyRobot.status;
 
 public enum Face {
     NORTH,
