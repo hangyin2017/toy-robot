@@ -1,4 +1,4 @@
-package main.java.com.toyRobot.input;
+package com.toyRobot.input;
 
 import java.util.Scanner;
 import java.util.ArrayList;

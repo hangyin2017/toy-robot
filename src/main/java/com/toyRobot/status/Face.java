@@ -1,4 +1,4 @@
-package main.java.com.toyRobot.status;
+package com.toyRobot.status;
 
 public enum Face {
     NORTH,

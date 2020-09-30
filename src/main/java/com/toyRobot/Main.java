@@ -1,8 +1,8 @@
-package main.java.com.toyRobot;
+package com.toyRobot;
 
-import main.java.com.toyRobot.robot.Robot;
-import main.java.com.toyRobot.input.Input;
-import main.java.com.toyRobot.input.InputParser;
+import com.toyRobot.robot.Robot;
+import com.toyRobot.input.Input;
+import com.toyRobot.input.InputParser;
 
 public class Main {
 	public static void main(String[] args) {

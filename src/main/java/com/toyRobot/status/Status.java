@@ -1,4 +1,4 @@
-package main.java.com.toyRobot.status;
+package com.toyRobot.status;
 
 public class Status {
     private Position position;
@@ -20,6 +20,15 @@ public class Status {
 
     public Face face() {
         return this.face;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(!(obj instanceof Status)) {
+            return false;
+        }
+        Status target = (Status) obj;
+        return this.face == target.face && this.position.equals(target.position);
     }
 
     @Override

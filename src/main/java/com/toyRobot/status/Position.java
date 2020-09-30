@@ -1,4 +1,4 @@
-package main.java.com.toyRobot.status;
+package com.toyRobot.status;
 
 public class Position {
     private int x;
@@ -15,6 +15,15 @@ public class Position {
 
     public int y() {
         return this.y;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(!(obj instanceof Position)) {
+            return false;
+        }
+        Position target = (Position) obj;
+        return this.x() == target.x() && this.y() == target.y();
     }
 
     @Override

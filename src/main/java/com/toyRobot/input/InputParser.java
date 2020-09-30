@@ -1,7 +1,7 @@
-package main.java.com.toyRobot.input;
+package com.toyRobot.input;
 
-import main.java.com.toyRobot.command.*;
-import main.java.com.toyRobot.status.Face;
+import com.toyRobot.command.*;
+import com.toyRobot.status.Face;
 
 public class InputParser {
     public Command parse(String inputLine) {

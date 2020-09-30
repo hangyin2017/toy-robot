@@ -1,8 +1,8 @@
-package main.java.com.toyRobot.robot;
+package com.toyRobot.robot;
 
-import main.java.com.toyRobot.status.Status;
-import main.java.com.toyRobot.table.Table;
-import main.java.com.toyRobot.command.*;
+import com.toyRobot.status.Status;
+import com.toyRobot.table.Table;
+import com.toyRobot.command.*;
 
 public class Robot {
     private Status status;
