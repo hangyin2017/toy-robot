@@ -3,6 +3,7 @@ package com.toyRobot.input;
 import com.toyRobot.command.*;
 import com.toyRobot.status.Face;
 
+/** To-do: 读取文件 */
 public class InputParser {
     public Command parse(String inputLine) {
         String[] inputArray = this.sanitiser(inputLine).split(" ");
@@ -27,6 +28,7 @@ public class InputParser {
         return input.trim().toUpperCase();
     }
 
+    /** To-do: 防止非法输入，考虑正则表达式 */
     private Command parsePlaceCommand(String[] params) {
         return new Place(
                 Integer.parseInt(params[0]),

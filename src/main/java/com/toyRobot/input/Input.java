@@ -10,7 +10,10 @@ public class Input {
         List<String> input = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
         
-        while(scanner.hasNext()) {
+        System.out.println("Please input commands. One command each line.");
+        System.out.println("To complete input, enter 'end'.");
+
+        while(!scanner.hasNext("end")) {
             input.add(scanner.nextLine());
         }
 

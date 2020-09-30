@@ -37,6 +37,7 @@ public class CommandsTest {
 				this.left.execute(new Status(2, 2, Face.WEST)));
 	}
 
+	/** To-do: 也需要各个方向都测试 */
 	@Test
 	void testRight() {
 		this.right = new Right();

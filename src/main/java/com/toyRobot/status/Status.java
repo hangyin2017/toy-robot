@@ -28,7 +28,7 @@ public class Status {
             return false;
         }
         Status target = (Status) obj;
-        return this.face == target.face && this.position.equals(target.position);
+        return this.face() == target.face() && this.position().equals(target.position());
     }
 
     @Override
