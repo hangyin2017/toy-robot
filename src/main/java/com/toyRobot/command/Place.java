@@ -1,7 +1,7 @@
-package main.com.toyRobot.command;
+package main.java.com.toyRobot.command;
 
-import main.com.toyRobot.status.Status;
-import main.com.toyRobot.status.Face;
+import main.java.com.toyRobot.status.Status;
+import main.java.com.toyRobot.status.Face;
 
 public class Place extends Command {
     private Status status;

@@ -1,8 +1,8 @@
-package main.com.toyRobot.robot;
+package main.java.com.toyRobot.robot;
 
-import main.com.toyRobot.status.Status;
-import main.com.toyRobot.table.Table;
-import main.com.toyRobot.command.*;
+import main.java.com.toyRobot.status.Status;
+import main.java.com.toyRobot.table.Table;
+import main.java.com.toyRobot.command.*;
 
 public class Robot {
     private Status status;
@@ -22,8 +22,4 @@ public class Robot {
             System.out.println("Dangerous move has been prevented.");
         }
     }
-
-    public void report() {
-        System.out.println(this.status == null ? "Not placed yet." : this.status);
-    }    
 }

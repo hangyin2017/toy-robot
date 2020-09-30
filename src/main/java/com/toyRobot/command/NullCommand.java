@@ -1,6 +1,6 @@
-package main.com.toyRobot.command;
+package main.java.com.toyRobot.command;
 
-import main.com.toyRobot.status.Status;
+import main.java.com.toyRobot.status.Status;
 
 public class NullCommand extends Command {
     @Override

@@ -1,4 +1,4 @@
-package main.com.toyRobot.status;
+package main.java.com.toyRobot.status;
 
 public class Position {
     private int x;

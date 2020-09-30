@@ -1,6 +1,6 @@
-package main.com.toyRobot.table;
+package main.java.com.toyRobot.table;
 
-import main.com.toyRobot.status.Position;
+import main.java.com.toyRobot.status.Position;
 
 public final class Table {
     private static final Position BOUNDARY = new Position(4, 4);

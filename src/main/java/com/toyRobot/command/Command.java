@@ -1,6 +1,6 @@
-package main.com.toyRobot.command;
+package main.java.com.toyRobot.command;
 
-import main.com.toyRobot.status.*;
+import main.java.com.toyRobot.status.*;
 
 public abstract class Command {
     public Status execute(Status status) {
